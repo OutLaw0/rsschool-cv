@@ -1,4 +1,4 @@
-![Valentin Akimov](assets/img/photo.jpg)
+![Valentin Akimov](assets/img/photo_2021-12-13_02-00-13.jpg)
 # **Valentin Akimov**
 
 ## 📫 Contact info
@@ -28,7 +28,7 @@
 
 &nbsp;
 
-## 👀 Example of My Code
+## 👀 Code example
 
 
 *Decode the Morse code* (from [Codewars](https://www.codewars.com/users/OutLaw0))
