@@ -3,12 +3,11 @@
 
 ## 📫 Contact info
 
-* **Telegram:** [@OutLaw_tg](https://t.me/outlaw_tg) 
-* **Email:** <vaakimov@gmail.com>  
-* **Discord:** Valentin Ak(@OutLaw0)
-* **GitHub:** [OutLaw0](https://github.com/OutLaw0)  
+- **Telegram:** [@OutLaw_tg](https://t.me/outlaw_tg) 
+- **Email:** <vaakimov@gmail.com>  
+- **Discord:** Valentin Ak(@OutLaw0)
+- **GitHub:** [OutLaw0](https://github.com/OutLaw0)  
 
-&nbsp;
 
 ## 👋 About me
 
@@ -16,7 +15,6 @@
 -  I’m interested in Web tecnology and improve my skills
 -  I’m currently learning HTML, CSS, JS, Python
 
-&nbsp;
 
 ## 🌱 Skills
 
@@ -56,17 +54,28 @@ decodeMorse = function(morseCode){
 }
 
 ```
-&nbsp;
 
 ## Experience
 
-
-&nbsp;
+- **2008-2013** - Banking industry
+- **2013-2020** - Small own business (delivery service)
+- **2019-2021** - Build Online store 30+thousand products (CMS Joomla+Virtuemart)
+- other stuff: 
+   - buildind small corporate web sites and landings (CMS Joomla)
+   - Administration CMS 1C-Bitrix corporate site
 
 ## Education
 
+- **Moscow State University of Economics, Statistics and Computer Science** 
+  - Mathematical Methods in Economics,
 
-&nbsp;
+- **Online education**
+  - freecodecamp.org (Responsive Web Design Certificate, Basic JavaScript);
+  - HTML Academy (Basic HTML, CSS, JS, PHP courses);
+  - learn.javascript.ru
+  - RS PreSchool (in progress...)
 
 ## English 
 * Intermediate (B1)
+-----
+ ![English test](assets/img/1639251880628.jpg)
