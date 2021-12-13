@@ -55,7 +55,7 @@ decodeMorse = function(morseCode){
 
 ```
 
-## Experience
+## 💎 Experience
 
 - **2008-2013** - Banking industry
 - **2013-2020** - Small own business (delivery service)
@@ -64,7 +64,7 @@ decodeMorse = function(morseCode){
    - buildind small corporate web sites and landings (CMS Joomla)
    - Administration CMS 1C-Bitrix corporate site
 
-## Education
+## 🔬 Education
 
 - **Moscow State University of Economics, Statistics and Computer Science** 
   - Mathematical Methods in Economics,
