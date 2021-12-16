@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cv</title>
+    <title>Valentin Akimov CV</title>
 <link href="style.css" rel="stylesheet">
 <link rel="icon" href="assets/img/favicon.ico" />
+<!--
 <link rel="preconnect" href="https://fonts.gstatic.com">  
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-light.min.css"> 
+
+-->
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-light.min.css"> 
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 
@@ -42,11 +45,18 @@
     <main class="main">
         <div class="container">
             <section class="section" id="profile">
-               
-                <img src="assets/img/photo_2021-12-13_02-00-13.jpg" width="200" alt="Valentin">
+               <span class="profile__img">
+                <img src="assets/img/photo_2021-12-13_02-00-13.jpg" width="250" alt="Valentin">
+            </span>
+         
+            <span class="profile__name">
+            <span  class="profile__name__gh">
                 <h1 class="section-title-h1">Valentin Akimov</h1>
-                <span class="year">Web Developer</span>
+                <span class="year">Junior Front-End Developer</span>
+            
+            </span>
 
+        </span>
                
             </section>
             <section class="section" id="contacts">
@@ -104,23 +114,22 @@
         <p><i>Decode the Morse code</i> (from <a href="https://www.codewars.com/users/OutLaw0">Codewars</a>)</p>
         <pre>
         <code class="language-javascript">            
-    decodeMorse = function(morseCode){
+decodeMorse = function(morseCode){
 
-     let words = morseCode.trim().split('   ');
-     let sumword1 = '';
-         for (let word of words) {
-           let sumword = '';
-        
-           let letters = word.split(' ');
-           for (let letter of letters) {
-
-              sumword += MORSE_CODE[letter];
-             }
-           sumword1 += sumword + ' ';
+ let words = morseCode.trim().split('   ');
+ let sumword1 = '';
+     for (let word of words) {
+       let sumword = '';
+    
+       let letters = word.split(' ');
+       for (let letter of letters) {
+          sumword += MORSE_CODE[letter];
          }
-         return sumword1.slice (0, - 1)
-     }       
-        </code>
+       sumword1 += sumword + ' ';
+     }
+    return sumword1.slice (0, - 1)
+ }       
+    </code>
     </pre>
     </div>
     </section>
@@ -184,7 +193,7 @@
                 <a href="https://github.com/OutLaw0" class=""><img src="assets/img/GitHub-Mark-120px-plus.png" width="33" alt="github"></a>
             </section>
             <section class="section__footer" >
-                <span class="year">2021</span>
+                <span class="year">© 2021 by AVA</span>
             </section>
             <section class="section__footer" >
             <a href="https://rs.school/js/" class=""><img src="https://rs.school/images/rs_school_js.svg" width="90 alt="rsschool"></a>
