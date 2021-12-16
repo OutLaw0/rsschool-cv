@@ -160,7 +160,16 @@ span.year{
     -webkit-animation: profile__name 0.7s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: profile__name 0.7s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
+@keyframes profile__name {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+}
 @-webkit-keyframes profile__name {
   0% {
     -webkit-transform: translateX(0);
@@ -172,7 +181,7 @@ span.year{
   }
 }
 
-
+/*
 @media (max-width: 1000px){
   .section#profile .profile__img{
     
@@ -188,7 +197,8 @@ span.year{
   
   }
 
-}
+}*/
+
 @media (max-width: 500px){
   
   
@@ -200,7 +210,16 @@ span.year{
     -webkit-animation: profile__img 0.7s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: profile__img 0.7s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
-  
+  @keyframes profile__img {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
   @-webkit-keyframes profile__img {
     0% {
       -webkit-transform: translateX(0);
@@ -226,7 +245,16 @@ span.year{
       -webkit-animation: profile__name 0.7s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: profile__name 0.7s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
-  
+  @keyframes profile__name {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateY(270px);
+              transform: translateY(270px);
+    }
+  }
   @-webkit-keyframes profile__name {
     0% {
       -webkit-transform: translateX(0);
@@ -244,6 +272,14 @@ span.year{
     margin-top: -250px;
     -webkit-animation: summary 0.7s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: summary 0.7s 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  @keyframes summary {
+    0% {
+      margin-top: -250px;
+    }
+    100% {
+      margin-top: 0px;
+    }
   }
   @-webkit-keyframes summary {
     0% {
