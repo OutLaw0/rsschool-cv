@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentin Akimov CV</title>
+<link href="style.css" rel="stylesheet">
+<link rel="icon" href="assets/img/favicon.ico" />
+<!--
+<link rel="preconnect" href="https://fonts.gstatic.com">  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+-->
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-light.min.css"> 
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item img"><a href="#profile" class="nav-link"><img src="assets/img/favicon.ico" width="40" alt="profile"></a></li> 
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#summary" class="nav-link">About me</a></li>    
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                  <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                  <li class="nav-item"><a href="#exp" class="nav-link">Experience</a></li>
+                  <li class="nav-item"><a href="#video" class="nav-link">Video</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+              </nav>
+        </div>
+     
+    </header>
+     
+    <main class="main">
+        <div class="container">
+            <section class="section" id="profile">
+               <span class="profile__img">
+                <img src="assets/img/photo_2021-12-13_02-00-13.jpg" width="250" alt="Valentin">
+            </span>
+         
+            <span class="profile__name">
+            <span  class="profile__name__gh">
+                <h1 class="section-title-h1">Valentin Akimov</h1>
+                <span class="year">Junior Front-End Developer</span>
+            
+            </span>
+
+        </span>
+               
+            </section>
+            <section class="section" id="contacts">
+          
+
+         <h2 class="section-title">Contacts</h2>
+         <ul>
+             <li>Telegram: <a href="https://t.me/outlaw_tg">@OutLaw_tg</a> </li>
+             <li>Email: vaakimov@gmail.com </li>
+             <li>Discord: Valentin Ak(@OutLaw0)</li>
+             <li>GitHub: <a href="https://github.com/OutLaw0">OutLaw0</a>  </li>
+             <li>Russia, Moscow</a>  </li>
+         </ul>
+       
+            </section>
+            <section class="section" id="summary">
+                <div class="section__pattern">
+            <h2 class="section-title">About Me</h2>
+
+            <ul>
+                <li>Hi, I’m Valentin Akimov</li>
+                <li>I’m interested in Web tecnology and improve my skills</li>
+                <li>I’m currently learning HTML, CSS, JS, Python</li>
+               
+            </ul>                   
+        </div>
+            </section>
+        <section class="section" id="skills">
+            <div class="section__pattern">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills">
+                <li class="skill-bar">HTML, CSS (Bootstrap, Sass, Less)
+                    <span style="width: 65%;"></span>
+                </li>
+                <li class="skill-bar">JavaScript (basics), PHP (basics)
+                    <span style="width: 10%;"></span>
+                 </li>
+                <li class="skill-bar">DB (MySQL)
+                    <span style="width: 20%;"></span>
+                </li>
+                <li class="skill-bar">CMS (Joomla + Virtuemart, 1C-Bitrix)
+                    <span style="width: 75%;"></span>
+                </li>
+                <li class="skill-bar">MS Excel (Power Query, Vba)
+                    <span style="width: 90%;"></span>
+                </li>
+                               
+            </ul> 
+            </div> 
+        </section>
+    <section class="section" id="code">
+        <div class="section__pattern">
+        <h2 class="section-title">Code example</h2>
+
+        <p><i>Decode the Morse code</i> (from <a href="https://www.codewars.com/users/OutLaw0">Codewars</a>)</p>
+        <pre>
+        <code class="language-javascript">            
+decodeMorse = function(morseCode){
+
+ let words = morseCode.trim().split('   ');
+ let sumword1 = '';
+     for (let word of words) {
+       let sumword = '';
+    
+       let letters = word.split(' ');
+       for (let letter of letters) {
+          sumword += MORSE_CODE[letter];
+         }
+       sumword1 += sumword + ' ';
+     }
+    return sumword1.slice (0, - 1)
+ }       
+    </code>
+    </pre>
+    </div>
+    </section>
+    <section class="section" id="exp">
+        <h2 class="section-title">Experience</h2>
+
+        <ul>
+            <li>2008-2013 - <b>Banking industry</b></li>
+            <li>2013-2020 - <b>Small own business (delivery service)</b></li>
+            <li>2019-2021 - <b>Developed an online store with 30+thousand products (CMS Joomla+Virtuemart)</b></li>
+            <li><b>other stuff:</b>
+            <ul>
+                <li>Developed small corporate websites and landing pages (CMS Joomla)</li>          
+                <li>Administration CMS 1C-Bitrix corporate site</li>  
+                <li>Small biography page on <a href="https://codepen.io/outlawww/full/xxGLJap">Codepen</a></li>  
+                <li><a href="https://OutLaw0.github.io/rsschool-cv/">My CV</a></li>       
+            </ul>     </li>                
+        </ul>     
+        
+        
+
+    </section>
+    <section class="section" id="video">
+        <h2 class="section-title">Video</h2>
+    </section>
+    <section class="section" id="education">
+        <h2 class="section-title">Education</h2> 
+        <ul>
+            <li><b>Moscow State University of Economics, Statistics and Computer Science</b>
+            <ul>
+                <li>Mathematical Methods in Economics</li>                
+            </ul>  
+            </li>
+            <li><b>Online education</b>
+            <ul>
+                <li>freecodecamp.org (Responsive Web Design Certificate, Basic JavaScript);</li>
+                <li>HTML Academy (Basic HTML, CSS, JS, PHP courses);</li>
+                <li>learn.javascript.ru</li>
+                <li>RS PreSchool (in progress...)</li>
+                                  
+            </ul>     
+            </li>                    
+        </ul>  
+
+    </section>
+    <section class="section" id="languages">
+        
+        <h2 class="section-title">Languages</h2>
+        <div class="lang__section">
+        <ul>
+            <li>Russian - native</li>
+            <li>English - Intermediate (B1)</li>
+                                       
+        </ul>  
+    
+       <img src="assets/img/1639251880628.jpg" width="300" alt="EFSET">
+    </div>
+    </section>
+</div>
+</main>
+    
+    <footer class="footer">
+        <div class="container">
+            <section class="section__footer" >
+                <a href="https://github.com/OutLaw0" class=""><img src="assets/img/GitHub-Mark-120px-plus.png" width="33" alt="github"></a>
+            </section>
+            <section class="section__footer" >
+                <span class="year1">© 2021 by AVA</span>
+            </section>
+            <section class="section__footer" >
+            <a href="https://rs.school/js/" class=""><img src="https://rs.school/images/rs_school_js.svg" width="90 alt="rsschool"></a>
+        </section>
+
+       
+        
+        </div>
+        <a href="#" class="button"></a>
+		<div class="cap"></div>
+     
+    </footer>
+
+
+</body>
+</html>
