@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: 'Roboto';
   src: url("assets/fonts/Montserrat/Montserrat-Medium.ttf");
@@ -61,7 +62,9 @@ header {
   background: var(--white);
   z-index: 1;
 }*/
-.main{padding: 20px 0;}
+.main .container{border-left: 1px solid var(--gray);
+  border-right: 1px solid var(--gray);
+  }
 
 .container {
   max-width: 1440px;
@@ -80,7 +83,16 @@ header {
 span.year{
   font-size: 20px;
 }
-.header, .footer{border-top: 1px solid var(--gray);border-bottom: 1px solid var(--gray);}
+span.year1{
+  font-size: 12px;
+}
+header .container{
+  border: 1px solid var(--gray);
+  border-bottom: 1px solid transparent;}
+
+
+footer .container{border: 1px solid var(--gray);
+  border-top: 1px solid transparent;}
 .nav-list{display: flex;justify-content: center;align-items: center;list-style: none; flex-wrap: wrap;padding: 0;}
 .nav-list a {text-decoration: none; color:var(--text-color); font-weight: normal;}
 .nav-item{padding: 10px 20px;font-size: 16px;}
@@ -125,6 +137,9 @@ span.year{
   justify-content: center;
   align-items: flex-start;
     flex-wrap: wrap;
+   /* background: #222 url(assets/img/matrix-code.jpg) repeat-x;
+  
+    background-size: 300px;*/
 }
 
  .profile__img{
@@ -201,6 +216,7 @@ span.year{
 
 @media (max-width: 500px){
   
+  ul, li>ul {padding-left: 30px;}
   
   .profile__img{
       
@@ -290,14 +306,27 @@ span.year{
     }
   }
 
-
+  .button {
+      bottom: 35px !important; right: 10px !important;
+  
+   
+  }
+  .cap {
+   
+    
+    bottom: 34px !important; right: 9px !important;
+    
+    
+  }
 
 
 
 }
 
+@media (min-width: 1000px){
 
-
+  .container{padding: 0px 40px;}
+}
 
 .profile__name_1 {
   position: relative;
@@ -426,4 +455,20 @@ section#education{
 
 section#languages{
   order: 8;
+}
+.button {
+  display: block;
+  background: url(assets/img/up-arrow.png) center no-repeat;
+  height: 32px; width: 32px;
+  position: fixed; bottom: 20px; right: 20px;
+  z-index: 1;
+  background-size: 32px 32px;
+ 
+}
+.cap {
+  background-color: #fff;
+  height: 40px; width: 40px;
+  position: absolute; bottom: 20px; right: 20px;
+  z-index: 2;
+  
 }
