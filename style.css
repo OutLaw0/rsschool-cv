@@ -25,11 +25,13 @@ h1{
   margin: 20px 0 10px 0;
   font-weight: 100;
 }
+ul, li>ul, li {line-height: 20px;}
+
 li>ul{
   padding-top: 5px;
 }
 li{
-  padding-bottom: 5px;
+  padding-bottom: 7px;
 }
 html {
   scroll-behavior: smooth; 
@@ -319,7 +321,9 @@ footer .container{border: 1px solid var(--gray);
     
   }
 
-
+  .youtube_player{
+width:auto;
+  }
 
 }
 
@@ -406,14 +410,14 @@ font-size: 15px;
     position: absolute;
     bottom: -10px;
     display: block;
-    height: 1px;
+    height: 4px;
     width: 100%;
-    background-color: var(--gray);
+    background-color: var(--light-gray);
 }
 
 .skill-bar span{
-bottom: -11px;
-height: 3px;
+  bottom: -10px;
+  height: 4px;
 background-color: var(--gray);
 }
 
@@ -436,6 +440,11 @@ section#summary{
 section#contacts{
   order: 2;
 }
+section#contacts li{
+  white-space: nowrap;
+}
+
+
 section#skills{
   order: 3;
 }
