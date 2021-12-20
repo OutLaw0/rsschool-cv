@@ -321,7 +321,9 @@ footer .container{border: 1px solid var(--gray);
     
   }
 
-
+  .youtube_player{
+width:auto;
+  }
 
 }
 
