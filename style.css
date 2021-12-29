@@ -326,6 +326,12 @@ width:auto;
   }
 
 }
+@media (max-width: 999px){
+
+.youtube_player{
+  width:auto;
+    }
+  }
 
 @media (min-width: 1000px){
 
