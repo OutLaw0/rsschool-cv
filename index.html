@@ -63,6 +63,88 @@
 
     <main class="main">
 <div class="container">
+    <aside>
+        <div class="aside-container">
+            <section class="section" id="contacts">
+
+
+                <h2 class="section-title">Contacts</h2>
+                <ul>
+                    <li>Telegram: <a href="https://t.me/outlaw_tg">@OutLaw_tg</a> </li>
+                    <li>Email: vaakimov@gmail.com </li>
+                    <li>Discord: Valentin Ak(@OutLaw0)</li>
+                    <li>GitHub: <a href="https://github.com/OutLaw0">OutLaw0</a> </li>
+                    <li>Russia, Moscow</li>
+                </ul>
+
+            </section>
+            <section class="section" id="skills">
+                <div class="section__pattern">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="skills">
+                        <li class="skill-bar">HTML, CSS (Bootstrap, Sass, Less)
+                            <span style="width: 65%;"></span>
+                        </li>
+                        <li class="skill-bar">JavaScript (basics), PHP (basics)
+                            <span style="width: 10%;"></span>
+                        </li>
+                        <li class="skill-bar">DB (MySQL)
+                            <span style="width: 20%;"></span>
+                        </li>
+                        <li class="skill-bar">CMS (Joomla + Virtuemart, 1C-Bitrix)
+                            <span style="width: 75%;"></span>
+                        </li>
+                        <li class="skill-bar">MS Excel (Power Query, Vba)
+                            <span style="width: 90%;"></span>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <section class="section" id="code">
+                <div class="section__pattern">
+                    <h2 class="section-title">Code example</h2>
+
+                    <p><i>Decode the Morse code</i> (from <a href="https://www.codewars.com/users/OutLaw0">Codewars</a>)
+                    </p>
+                    <pre>
+        <code class="language-javascript">            
+decodeMorse = function(morseCode){
+
+let words = morseCode.trim()
+                     .split('   ');
+let sumword1 = '';
+for (let word of words) {
+let sumword = '';
+
+let letters = word.split(' ');
+for (let letter of letters) {
+    sumword += MORSE_CODE[letter];
+    }
+sumword1 += sumword + ' ';
+}
+return sumword1.slice (0, - 1)
+}       
+    </code>
+    </pre>
+                </div>
+            </section>
+            <section class="section" id="languages">
+
+                <h2 class="section-title">Languages</h2>
+                <div class="lang__section">
+                    <ul>
+                        <li>Russian - native</li>
+                        <li>English - Intermediate (B1)</li>
+
+                    </ul>
+
+                    <img src="assets/img/1639251880628.jpg" alt="EFSET">
+                </div>
+            </section>
+        </div>
+
+    </aside>
         <div class="main-container">
 
 
@@ -133,87 +215,7 @@
             </section>
 
         </div>
-        <aside>
-            <div class="aside-container">
-                <section class="section" id="contacts">
-    
-    
-                    <h2 class="section-title">Contacts</h2>
-                    <ul>
-                        <li>Telegram: <a href="https://t.me/outlaw_tg">@OutLaw_tg</a> </li>
-                        <li>Email: vaakimov@gmail.com </li>
-                        <li>Discord: Valentin Ak(@OutLaw0)</li>
-                        <li>GitHub: <a href="https://github.com/OutLaw0">OutLaw0</a> </li>
-                        <li>Russia, Moscow</li>
-                    </ul>
-    
-                </section>
-                <section class="section" id="skills">
-                    <div class="section__pattern">
-                        <h2 class="section-title">Skills</h2>
-                        <ul class="skills">
-                            <li class="skill-bar">HTML, CSS (Bootstrap, Sass, Less)
-                                <span style="width: 65%;"></span>
-                            </li>
-                            <li class="skill-bar">JavaScript (basics), PHP (basics)
-                                <span style="width: 10%;"></span>
-                            </li>
-                            <li class="skill-bar">DB (MySQL)
-                                <span style="width: 20%;"></span>
-                            </li>
-                            <li class="skill-bar">CMS (Joomla + Virtuemart, 1C-Bitrix)
-                                <span style="width: 75%;"></span>
-                            </li>
-                            <li class="skill-bar">MS Excel (Power Query, Vba)
-                                <span style="width: 90%;"></span>
-                            </li>
-    
-                        </ul>
-                    </div>
-                </section>
-                <section class="section" id="code">
-                    <div class="section__pattern">
-                        <h2 class="section-title">Code example</h2>
-    
-                        <p><i>Decode the Morse code</i> (from <a href="https://www.codewars.com/users/OutLaw0">Codewars</a>)
-                        </p>
-                        <pre>
-            <code class="language-javascript">            
-decodeMorse = function(morseCode){
 
-let words = morseCode.trim().split('   ');
-let sumword1 = '';
-    for (let word of words) {
-    let sumword = '';
-
-    let letters = word.split(' ');
-    for (let letter of letters) {
-        sumword += MORSE_CODE[letter];
-        }
-    sumword1 += sumword + ' ';
-    }
-return sumword1.slice (0, - 1)
-}       
-        </code>
-        </pre>
-                    </div>
-                </section>
-                <section class="section" id="languages">
-    
-                    <h2 class="section-title">Languages</h2>
-                    <div class="lang__section">
-                        <ul>
-                            <li>Russian - native</li>
-                            <li>English - Intermediate (B1)</li>
-    
-                        </ul>
-    
-                        <img src="assets/img/1639251880628.jpg" width="300" alt="EFSET">
-                    </div>
-                </section>
-            </div>
-    
-        </aside>
     </div>
     </main>
    
