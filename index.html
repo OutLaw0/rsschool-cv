@@ -27,8 +27,9 @@
 <body>
     <header class="header">
         <div class="container">
-
+            <div class="nav-container">
             <nav class="nav">
+              
                 <ul class="nav-list">
                     <li class="nav-item img"><a href="#profile" class="nav-link"><img src="assets/img/favicon.ico"
                                 width="40" alt="profile"></a></li>
@@ -42,6 +43,12 @@
                     <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
                 </ul>
             </nav>
+            <div class="hamburger" id="hamburger-1">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
             <section class="section" id="profile">
                 <div class="profile__img">
                     <img src="assets/img/IMG_20211213_015949_230.png" width="250" alt="Valentin">
@@ -161,6 +168,42 @@ return sumword1.slice (0, - 1)
                 </div>
             </section>
 
+            <section class="section" id="projects">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="projects-grid">
+                    <div class="projects-item">
+
+                        <div class="projects-item-title">Portfolio page</div>
+                    <a href="https://rolling-scopes-school.github.io/outlaw0-JSFEPRESCHOOL/portfolio/">
+                        <img src="assets/img/portfolio.png" width="250" alt="PortfolioPage">
+                    </a>
+                </div>
+                    <div class="projects-item">
+                        <div class="projects-item-title">2048 Game</div>
+                        <a href="https://rolling-scopes-school.github.io/outlaw0-JSFEPRESCHOOL/js30-3.3-random-game/">
+                            <img src="assets/img/2048.png" width="250" alt="2048Game">
+                        </a>
+                    </div>
+                  
+                    <div class="projects-item">
+                        <div class="projects-item-title">Movie Api Search</div>
+                        <a href="https://rolling-scopes-school.github.io/outlaw0-JSFEPRESCHOOL/js30-2.3-movie-app/">
+                            <img src="assets/img/MovieApi.png" width="250" alt="MovieApi">
+                        </a>
+                    </div>
+                  
+                    <div class="projects-item">
+                        <div class="projects-item-title">Custom Video Player</div>
+                        <a href="https://rolling-scopes-school.github.io/outlaw0-JSFEPRESCHOOL/js30-1.3-custom-video/">
+                            <img src="assets/img/CustomVideoPlayer.png" width="250" alt="CustomVideoPlayer">
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </section>
 
             <section class="section" id="exp">
                 <h2 class="section-title">Experience</h2>
@@ -172,11 +215,10 @@ return sumword1.slice (0, - 1)
                     </li>
                     <li><b>other stuff:</b>
                         <ul>
-                            <li>Developed small corporate websites and landing pages (CMS Joomla)</li>
-                            <li>Administration CMS 1C-Bitrix corporate site</li>
+                            <li>Developed corporate websites, Ecommerce and landing pages (CMS Joomla)</li>
+                            <li>Administration CMS 1C-Bitrix corporate and Ecommerce site</li>
                             <li>Small biography page on <a href="https://codepen.io/outlawww/full/xxGLJap">Codepen</a>
                             </li>
-                            <li><a href="https://OutLaw0.github.io/rsschool-cv/">My CV</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -237,11 +279,11 @@ return sumword1.slice (0, - 1)
 
 
         </div>
-        <a href="#" class="button"></a>
-        <div class="cap"></div>
+        <a href="#" class="button-to-top"></a>
+     
 
     </footer>
-
+    <script src="index.js"></script>
     <script src="selfcheck.js"></script>
 </body>
 
