@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @font-face {
@@ -443,7 +444,7 @@ section#contacts li{
 }
 
 section#projects{
-  order: 3;
+  order: 6;
 }
 section#skills{
   order: 3;
@@ -475,7 +476,7 @@ section#languages{
   background-size: 32px 32px;
   transition: opacity 0.3s;
 }
-#projects img {
+.projects-item img {
     max-width:100%;
     height:auto;
     border-radius: 10px;
@@ -484,7 +485,7 @@ section#languages{
     filter: grayscale(1);
     transition: 0.3s;
   }
-  #projects img:hover {
+  .projects-grid .projects-item:hover  a img{
     filter: grayscale(0);
   }
 
@@ -700,6 +701,9 @@ section#contacts ul{
   
     .youtube_player{
       width:100%;
+    }
+    .projects-item{
+      width: 100%;
     }
   
   }
