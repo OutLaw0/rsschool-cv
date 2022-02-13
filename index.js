@@ -26,7 +26,9 @@ function closeNav(event) {
 }
 
 burgerButton.addEventListener("click", openNav); //set the event
+burgerButton.addEventListener("touchmove", openNav, {passive:false}); //set the event
 document.addEventListener("click", closeNav); //set the event
+document.addEventListener("touchend", closeNav, {passive:false}); //set the event
 
 /*test burger button*/
 
