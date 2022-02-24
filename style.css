@@ -495,7 +495,7 @@ section#languages{
     border-radius: 10px;
     margin-top: 0px;
     border: 1px solid var(--gray);
-    filter: saturate(0.5);
+   filter: brightness(0.7 );
     transition: 0.3s;
   }
   .projects-grid .projects-item:hover  a img{
