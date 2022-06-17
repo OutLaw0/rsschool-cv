@@ -93,11 +93,14 @@
                         <li class="skill-bar">HTML5, CSS3 (BEM, Sass, Figma)
                             <span style="width: 75%;"></span>
                         </li>
-                        <li class="skill-bar">JavaScript, PHP (basics)
-                            <span style="width: 25%;"></span>
+                        <li class="skill-bar">JavaScript (TS)
+                            <span style="width: 50%;"></span>
                         </li>
                         <li class="skill-bar">GIT (GitHub)
-                            <span style="width: 50%;"></span>
+                            <span style="width: 65%;"></span>
+                        </li>
+                         <li class="skill-bar">Webpack (Eslint)
+                            <span style="width: 55%;"></span>
                         </li>
                         <li class="skill-bar">CMS (Joomla + Virtuemart, Bitrix)
                             <span style="width: 75%;"></span>
@@ -119,13 +122,13 @@
         <code class="language-javascript">            
 decodeMorse = function(morseCode){
 
-let words = morseCode.trim()
+const words = morseCode.trim()
                      .split('   ');
 let sumword1 = '';
 for (let word of words) {
 let sumword = '';
 
-let letters = word.split(' ');
+const letters = word.split(' ');
 for (let letter of letters) {
     sumword += MORSE_CODE[letter];
     }
@@ -163,7 +166,7 @@ return sumword1.slice (0, - 1)
                     <ul>
                         <li>Hi, I’m Valentin Akimov</li>
                         <li>I’m interested in Web tecnology and improve my skills</li>
-                        <li>I’m currently learning JS, SASS, Webpack</li>
+                        <li>I’m currently learning JS, TS</li>
 
                     </ul>
                 </div>
@@ -247,12 +250,10 @@ return sumword1.slice (0, - 1)
             </section>
             <section class="section" id="video">
                 <h2 class="section-title">Video</h2>
-
-                <iframe width="500" height="300" src="https://www.youtube.com/embed/O2m31cWGvKo"
-                    title="YouTube video player" class="youtube_player" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+<iframe width="500" height="300" src="https://www.youtube.com/embed/uwxGGAFxUZM" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
             </section>
             <section class="section" id="education">
                 <h2 class="section-title">Education</h2>
