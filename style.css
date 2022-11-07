@@ -22,7 +22,7 @@
 
 h1 {
   font-size: 48px;
-  margin: 20px 0 10px 0;
+  margin: 20px 0 20px 0;
   font-weight: 100;
 }
 
@@ -128,7 +128,7 @@ code.hljs {
 }
 
 span.year {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 span.year1 {
@@ -451,7 +451,7 @@ a {
 }
 
 .profile__name__gh {
-  padding: 0px 20px 20px 20px;
+  padding: 0px 15px 15px 20px;
 
   /*-webkit-box-shadow: 4px 4px 5px 0px rgba(34, 60, 80, 0.2);
 -moz-box-shadow: 4px 4px 5px 0px rgba(34, 60, 80, 0.2);
