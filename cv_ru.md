@@ -53,5 +53,6 @@
 
 - **Telegram:** [@OutLaw_tg](https://t.me/outlaw_tg) 
 - **Email:** <vaakimov@gmail.com>  
+- **GitHub:** [OutLaw0](https://github.com/OutLaw0)
+- **Сайт:** [https://github.com/OutLaw0](https://outlaw0.github.io/rsschool-cv/)
 - **Discord:** Valentin Ak(@OutLaw0)
-- **GitHub:** [OutLaw0](https://github.com/OutLaw0)  
