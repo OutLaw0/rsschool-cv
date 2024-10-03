@@ -13,6 +13,7 @@
 - Более 8-ми лет создаю сайты в веб.
 - Мой текущий стек: TypeScript + React + Redux Toolkit.
 - Знаю основы и могу настроить БД: MySQL, MongoDB и пр.
+- Git, Webpack (Jest, RTL, Eslint) и пр
 - Системы управления сайтами CMS (Wordpress, Joomla + Virtuemart, 1C-Bitrix)
 - Отлично знаю все основы: HTML, CSS, JS
 - MS Excel (Power Query, Vba)
