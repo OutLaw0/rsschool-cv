@@ -1,4 +1,4 @@
-![Valentin Akimov](assets/img/photo_2021-12-13_02-00-13.jpg)
+![Valentin Akimov](assets/img/IMG_2019.JPG)
 # **Valentin Akimov**
 
 ## 📫 Contact info
