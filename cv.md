@@ -1,4 +1,4 @@
-![Valentin Akimov](assets/img/IMG_2019.JPG)
+![Valentin Akimov](assets/img/IMG_2019_small.JPG)
 # **Valentin Akimov**
 
 ## 📫 Contact info
