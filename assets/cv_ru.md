@@ -1,4 +1,4 @@
-![Valentin Akimov](assets/img/IMG_2019_small.JPG)
+![Valentin Akimov](img/IMG_2019_small.JPG)
 # **Валентин Акимов - Frontend разработчик**
 
 ## 👋 О себе

@@ -1,4 +1,4 @@
-![Valentin Akimov](assets/img/IMG_2019_small.JPG)
+![Valentin Akimov](img/IMG_2019_small.JPG)
 # **Valentin Akimov**
 
 ## 📫 Contact info
@@ -51,4 +51,4 @@ I am looking for a Middle+ frontend role where I can combine strong web fundamen
 ## English 
 * Intermediate (B1)
 -----
- ![English test](assets/img/1639251880628.jpg)
+ ![English test](img/1639251880628.jpg)
