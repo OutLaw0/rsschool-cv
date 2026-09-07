@@ -11,49 +11,22 @@
 
 ## 👋 About me
 
--  Hi, I’m Valentin Akimov
--  I’m interested in Web tecnology and improve my skills
--  I’m currently learning HTML, CSS, JS, Python
+Frontend engineer with commercial experience building and maintaining web products, including CRM and website-builder functionality. My strongest production experience is with Vue.js and JavaScript/TypeScript; I also build React applications in freelance and personal projects.
+
+I am looking for a Middle+ frontend role where I can combine strong web fundamentals, product-oriented development, and an AI-assisted engineering workflow.
 
 
 ## 🌱 Skills
 
-- HTML, CSS (Bootstrap, Sass, Less)
-- JavaScript (basics), PHP (basics) 
-- DB (MySQL)
-- CMS (Joomla + Virtuemart, 1C-Bitrix)
-- MS Excel (Power Query, Vba)
+- **Core**
+     TypeScript, JavaScript, Vue.js, React, HTML, CSS, Git
+- **Project experience**	
+     React, Redux Toolkit, REST API, Jest, RTL, Vite / Webpack
+- **Additional**	
+     PHP, Smarty, jQuery, MySQL, MongoDB, CMS
+- **AI workflow**	
+    Coding agents, decomposition, implementation, tests, review, documentation
 
-&nbsp;
-
-## 👀 Code example
-
-
-*Decode the Morse code* (from [Codewars](https://www.codewars.com/users/OutLaw0))
-
-```javascript
-
-decodeMorse = function(morseCode){
-  
-  let words = morseCode.trim().split('   ');
-  let sumword1 = '';
-  for (let word of words) {
-    let sumword = '';
-    
-    let letters = word.split(' ');
-    for (let letter of letters) {
-       
-       sumword += MORSE_CODE[letter];
-      }
-    sumword1 += sumword + ' ';
-  }
-  return sumword1.slice (0, - 1);
-  
- 
-  
-}
-
-```
 
 ## 💎 Experience
 
@@ -67,7 +40,7 @@ decodeMorse = function(morseCode){
 ## 🔬 Education
 
 - **Moscow State University of Economics, Statistics and Computer Science** 
-  - Mathematical Methods in Economics,
+  - Information Systems and Technologies
 
 - **Online education**
   - freecodecamp.org (Responsive Web Design Certificate, Basic JavaScript);
