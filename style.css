@@ -814,7 +814,7 @@ section#languages {
   gap: 24px;
   color: #a4bc95;
 }
-.profile-card__name { font-size: 44px; line-height: 1.18; }
+.profile-card__name { font-size: 42px; line-height: 1.18; }
 .profile-card__role { font-size: 18px; line-height: 1.4; }
 .profile-card__text.profile-card__back {
   background: radial-gradient(ellipse at top right, #183d61, #101e30 75%);
@@ -893,7 +893,7 @@ section#contacts li { white-space: normal; overflow-wrap: anywhere; }
     to { transform: translateY(0); }
   }
   .section#profile { padding-inline: 20px; }
-  .profile-card__name { font-size: 44px; }
+  .profile-card__name { font-size: 42px; }
 }
 @media (max-width: 450px) {
   .projects-grid { grid-template-columns: minmax(0, 1fr); }
