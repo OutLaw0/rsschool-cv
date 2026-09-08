@@ -724,9 +724,10 @@ section#languages {
   text-align: center;
 }
 .profile-cards {
+  --profile-gap: 48px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 280px));
-  gap: 48px;
+  gap: var(--profile-gap);
   max-width: 100%;
 }
 .profile-card {
@@ -741,13 +742,27 @@ section#languages {
   cursor: pointer;
   perspective: 1100px;
 }
+.profile-card:first-child {
+  animation: profile-card-from-left 800ms 350ms cubic-bezier(.25,.46,.45,.94) both;
+}
+.profile-card:nth-child(2) {
+  animation: profile-card-from-right 800ms 350ms cubic-bezier(.25,.46,.45,.94) both;
+}
+@keyframes profile-card-from-left {
+  from { transform: translateX(calc(50% + var(--profile-gap) / 2)); }
+  to { transform: translateX(0); }
+}
+@keyframes profile-card-from-right {
+  from { transform: translateX(calc(-50% - var(--profile-gap) / 2)); }
+  to { transform: translateX(0); }
+}
 .profile-card__inner {
   display: block;
   position: relative;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: transform 600ms cubic-bezier(.2,.65,.3,1);
+  transition: transform 1100ms cubic-bezier(.45,0,.55,1);
 }
 .profile-cards.is-flipped .profile-card__inner { transform: rotateY(180deg); }
 .profile-card__face {
@@ -762,6 +777,27 @@ section#languages {
   background: #262a2b;
 }
 .profile-card__back { transform: rotateY(180deg); }
+/* The original flip remains available when the matrix effect is disabled. */
+.matrix-ready .profile-card { perspective: none; }
+.matrix-ready .profile-card__inner,
+.matrix-ready.is-flipped .profile-card__inner {
+  transform: none;
+  transform-style: flat;
+  transition: none;
+  isolation: isolate;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.matrix-ready .profile-card__back { transform: none; z-index: 0; }
+.matrix-ready .profile-card__front { z-index: 1; }
+.profile-matrix-code {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
 .profile-card__face img {
   display: block;
   width: 100%;
@@ -778,7 +814,7 @@ section#languages {
   gap: 24px;
   color: #a4bc95;
 }
-.profile-card__name { font-size: 48px; line-height: 1.18; }
+.profile-card__name { font-size: 44px; line-height: 1.18; }
 .profile-card__role { font-size: 18px; line-height: 1.4; }
 .profile-card__text.profile-card__back {
   background: radial-gradient(ellipse at top right, #183d61, #101e30 75%);
@@ -836,7 +872,7 @@ section#contacts li { white-space: normal; overflow-wrap: anywhere; }
 }
 @media (max-width: 768px) {
   .projects-grid { grid-template-columns: 1fr; }
-  .profile-cards { gap: 28px; }
+  .profile-cards { --profile-gap: 28px; }
 }
 @media (max-width: 650px) {
   .section#profile { margin-top: 70px; }
@@ -845,7 +881,17 @@ section#contacts li { white-space: normal; overflow-wrap: anywhere; }
   .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 600px) {
-  .profile-cards { width: min(280px, 100%); grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .profile-cards { --profile-gap: 20px; width: min(280px, 100%); grid-template-columns: minmax(0, 1fr); }
+  .profile-card:first-child { animation-name: profile-card-from-top; }
+  .profile-card:nth-child(2) { animation-name: profile-card-from-bottom; }
+  @keyframes profile-card-from-top {
+    from { transform: translateY(calc(50% + var(--profile-gap) / 2)); }
+    to { transform: translateY(0); }
+  }
+  @keyframes profile-card-from-bottom {
+    from { transform: translateY(calc(-50% - var(--profile-gap) / 2)); }
+    to { transform: translateY(0); }
+  }
   .section#profile { padding-inline: 20px; }
   .profile-card__name { font-size: 44px; }
 }
@@ -861,3 +907,80 @@ section#contacts li { white-space: normal; overflow-wrap: anywhere; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 .codewars-badge span { display: block; margin-bottom: 10px; }
+
+/* Vertical liquid transition; the DOM text remains selectable by assistive tools. */
+.distortion-ready .profile-card { perspective: none; }
+.distortion-ready .profile-card__inner,
+.distortion-ready.is-flipped .profile-card__inner {
+  transform: none;
+  transform-style: flat;
+  transition: none;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #262a2b;
+}
+.distortion-ready .profile-card__front { z-index: 1; }
+.distortion-ready .profile-card__back { z-index: 0; transform: none; }
+
+/* Light dissolve. Change data-effect back to "flip" to restore the card turn. */
+.profile-cards[data-effect="light"] .profile-card { perspective: none; }
+.profile-cards[data-effect="light"] .profile-card__inner,
+.profile-cards[data-effect="light"].is-flipped .profile-card__inner {
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 14px;
+  transform: none;
+  transform-style: flat;
+  transition: none;
+}
+.profile-cards[data-effect="light"] .profile-card__face {
+  transition: opacity 850ms ease, filter 850ms ease, transform 850ms ease;
+}
+.profile-cards[data-effect="light"] .profile-card__front {
+  z-index: 2;
+  opacity: 1;
+  filter: brightness(1) blur(0);
+  transform: scale(1);
+}
+.profile-cards[data-effect="light"] .profile-card__back {
+  z-index: 1;
+  opacity: 0;
+  filter: brightness(1.55) blur(5px);
+  transform: scale(.97);
+}
+.profile-cards[data-effect="light"].is-flipped .profile-card__front {
+  opacity: 0;
+  filter: brightness(1.65) blur(5px);
+  transform: scale(1.04);
+}
+.profile-cards[data-effect="light"].is-flipped .profile-card__back {
+  opacity: 1;
+  filter: brightness(1) blur(0);
+  transform: scale(1);
+}
+.profile-cards[data-effect="light"] .profile-card__inner::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  left: -15%;
+  top: 0;
+  width: 130%;
+  height: 55%;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(to bottom,
+    transparent 0%,
+    rgba(132, 204, 255, .18) 24%,
+    rgba(235, 250, 255, .96) 50%,
+    rgba(132, 204, 255, .22) 74%,
+    transparent 100%);
+  filter: blur(9px);
+  mix-blend-mode: screen;
+  transform: translateY(-125%);
+  transition: transform 850ms ease-in-out, opacity 220ms ease;
+}
+.profile-cards[data-effect="light"].is-flipped .profile-card__inner::after {
+  opacity: .9;
+  transform: translateY(180%);
+}
