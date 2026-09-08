@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +16,6 @@
 
 -->
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-light.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-<script>
-  hljs.highlightAll();
-</script>
 
 </head>
 
@@ -27,7 +23,7 @@
   <header class="header">
     <div class="container">
       <div class="nav-container">
-        <nav class="nav">
+        <nav class="nav" id="main-navigation" aria-label="Main navigation">
 
           <ul class="nav-list">
             <li class="nav-item img"><a href="#profile" class="nav-link"><img src="assets/img/favicon.ico" width="40"
@@ -38,30 +34,42 @@
             <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
             <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
             <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
             <!-- <li class="nav-item"><a href="#languages" class="nav-link">Lang</a></li>-->
           </ul>
         </nav>
-        <div class="hamburger" id="hamburger-1">
+        <button class="hamburger" id="hamburger-1" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-navigation">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
-        </div>
+        </button>
       </div>
       <section class="section" id="profile">
-        <div class="profile__img">
-          <img src="assets/img/IMG_20211213_015949_230.jpg" width="250" alt="Valentin">
-        </div>
-
-        <div class="profile__name">
-          <div class="profile__name__gh">
-            <h1 class="section-title-h1">Valentin Akimov</h1>
-            <span class="year">Front-End Developer</span>
-
+        <h1 class="visually-hidden">Valentin Akimov — Frontend Developer</h1>
+        <div class="profile-cards" data-effect="light" aria-label="Developer profile">
+          <button class="profile-card" type="button" aria-label="Show AI-powered profile" aria-pressed="false">
+            <span class="profile-card__inner">
+              <span class="profile-card__face profile-card__front">
+                <img src="assets/img/IMG_20211213_015949_230.jpg" width="640" height="640" alt="Valentin Akimov">
+              </span>
+              <span class="profile-card__face profile-card__back" aria-hidden="true">
+                <img class="profile-ai" src="assets/img/valentin-ai.png" width="1254" height="1254" alt="Valentin with blue-white lightning and subtle anime styling">
+              </span>
+            </span>
+          </button>
+          <button class="profile-card" type="button" aria-label="Show AI-powered profile" aria-pressed="false">
+            <span class="profile-card__inner">
+              <span class="profile-card__face profile-card__front profile-card__text">
+                <span class="profile-card__name">Valentin<br>Akimov</span>
+                <span class="profile-card__role">Frontend Developer</span>
+              </span>
+              <span class="profile-card__face profile-card__back profile-card__text" aria-hidden="true">
+                <span class="profile-card__fullstack">Full Stack<br>Developer</span>
+                <span class="profile-card__powered">AI powered</span>
+              </span>
+            </span>
+          </button>
           </div>
-
-        </div>
-
+        <p class="profile-hint">Hover or tap to explore the AI side</p>
       </section>
     </div>
 
@@ -81,7 +89,7 @@
               <li>Email: vaakimov@gmail.com </li>
               <li>Discord: Valentin Ak(@OutLaw0)</li>
               <li>GitHub: <a href="https://github.com/OutLaw0">OutLaw0</a> </li>
-              <li>Location: Georgia</li>
+              <li>Location: Indonesia</li>
             </ul>
 
           </section>
@@ -110,33 +118,15 @@
                 <li class="skill-bar">CMS (Joomla + Virtuemart, Bitrix)
                   <span style="width: 85%;"></span>
                 </li>
-                <li class="skill-bar">MS Excel (Power Query, Vba)
-                  <span style="width: 90%;"></span>
-                </li>
               </ul>
+              <div class="ai-workflow">
+                <h3>AI workflow</h3>
+                <p>AI-powered development with coding agents: decomposition, implementation, tests, review, and documentation.</p>
+              </div>
+              <a class="codewars-badge" href="https://www.codewars.com/users/OutLaw0" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.codewars.com/users/OutLaw0/badges/large" alt="OutLaw0 on Codewars" loading="lazy">
+              </a>
             </div>
-          </section>
-          <section class="section" id="code">
-            <div class="section__pattern">
-              <h2 class="section-title">Code example</h2>
-              <p class="code__title"><i>Currying vs. Partial Application</i><br> (from <a
-                  href="https://www.codewars.com/users/OutLaw0">Codewars</a>)
-              </p>
-              <pre>
-        <code class="language-javascript">
-function curryPartial(fn, ...args) { 
-  if (args.length >= fn.length) {
-    return fn(...args)
-  } else {
-    return (...rest) => 
-    curryPartial(fn, ...args, ...rest)
-  }
-}
-    </code>
-    </pre>
-              <img src="https://www.codewars.com/users/OutLaw0/badges/large" alt="codewars">
-            </div>
-
           </section>
           <section class="section" id="languages">
 
@@ -160,15 +150,14 @@ function curryPartial(fn, ...args) {
         <section class="section" id="summary">
           <div class="section__pattern">
             <h2 class="section-title">About Me</h2>
-            <ul>
-              <li>Hi, I’m Valentin Akimov</li>
-              <li>I am a certified web developer</li>
-              <li>My currently stack: TypeScript + React + Redux Toolkit</li>
-              <li>I’m currently learning: Node.js, Next.js</li>
-              <a href="assets/img/ValentinAk_resume.pdf" target="_blank"><button class="btn html-to-pdf">Get pdf version</button></a>
-              <a href="cv.html" target="_blank"><button class="btn html-to-pdf">Cover latter</button></a>
-              <a href="cv_ru.html" target="_blank"><button class="btn html-to-pdf">Сопроводительное письмо</button></a>
-            </ul>
+            <p>I'm Valentin Akimov, a frontend engineer with commercial experience building and maintaining web products, including CRM and website-builder functionality.</p>
+            <p>My strongest production experience is with Vue.js and JavaScript/TypeScript. I also build React applications in freelance and personal projects.</p>
+            <p>I'm looking for a Middle+ frontend role that combines strong web fundamentals, product-oriented development, and an AI-assisted engineering workflow.</p>
+            <div class="resume-links">
+              <a href="assets/img/ValentinAk_resume.pdf" target="_blank" rel="noopener noreferrer" class="btn html-to-pdf">Get pdf version</a>
+              <a href="assets/cv.html" target="_blank" rel="noopener noreferrer" class="btn">Cover letter</a>
+              <a href="assets/cv_ru.html" target="_blank" rel="noopener noreferrer" class="btn">Сопроводительное письмо</a>
+            </div>
 
           </div>
         </section>
@@ -176,7 +165,23 @@ function curryPartial(fn, ...args) {
         <section class="section" id="projects">
           <h2 class="section-title">Projects</h2>
 
-          <div class="projects-grid js-excerpt excerpt-hidden">
+          <div class="projects-grid js-excerpt excerpt-hidden" id="project-list">
+            <div class="projects-item">
+              <div class="projects-item-title">CRM</div>
+              <a href="https://www.webasyst.ru/store/app/crm/" target="_blank" rel="noopener noreferrer">
+                <ul><li>Vue.js / JavaScript</li><li>PHP / Smarty</li></ul>
+                <img src="assets/projects/crm/crm.jpg" width="250" alt="Webasyst CRM deal management interface" loading="lazy">
+              </a>
+              <p class="project-description">Migration to Vue, many other tasks</p>
+            </div>
+            <div class="projects-item">
+              <div class="projects-item-title">Website-builder</div>
+              <a href="https://www.webasyst.ru/store/app/site/" target="_blank" rel="noopener noreferrer">
+                <ul><li>Vue.js / JavaScript</li><li>HTML / Stylus / Sass</li><li>PHP / Smarty</li></ul>
+                <img src="assets/projects/website-builder/wa3.jpg" width="250" alt="Webasyst visual website editor" loading="lazy">
+              </a>
+              <p class="project-description">Development website builder module.</p>
+            </div>
             <div class="projects-item">
               <div class="projects-item-title">Project Management App</div>
               <a href="https://github.com/OutLaw0/project-management-app" target="_blank">
@@ -186,7 +191,7 @@ function curryPartial(fn, ...args) {
                   <li>REST Api</li>
                   <li>SPA</li>
                 </ul>
-                <img src="assets/img/rstrello.jpg" width="250" alt="rstrello">
+                <img src="assets/projects/project-management-app/rstrello.jpg" width="250" alt="rstrello">
               </a>
             </div>
             <div class="projects-item">
@@ -197,7 +202,7 @@ function curryPartial(fn, ...args) {
                   <li>REST Api</li>
                   <li>SPA</li>
                 </ul>
-                <img src="assets/img/youtube_api.jpg" width="250" alt="youtube_api">
+                <img src="assets/projects/youtube-api/youtube_api.jpg" width="250" alt="youtube_api">
               </a>
             </div>
             <div class="projects-item">
@@ -208,7 +213,7 @@ function curryPartial(fn, ...args) {
                   <li>Team Development</li>
                   <li>SPA</li>
                 </ul>
-                <img src="assets/img/rslang.jpg" width="250" alt="rslang">
+                <img src="assets/projects/rslang/rslang.jpg" width="250" alt="rslang">
               </a>
             </div>
             <div class="projects-item">
@@ -218,7 +223,7 @@ function curryPartial(fn, ...args) {
                   <li>TypeScript</li>
                   <li>Tailwind CSS</li>
                 </ul>
-                <img src="assets/img/online-store.jpg" width="250" alt="online-store">
+                <img src="assets/projects/online-store/online-store.jpg" width="250" alt="online-store">
               </a>
             </div>
             <div class="projects-item">
@@ -228,7 +233,7 @@ function curryPartial(fn, ...args) {
                   <li>Vanilla JS</li>
                   <li>Full Adaptive</li>
                 </ul>
-                <img src="assets/img/portfolio.jpg" width="250" alt="PortfolioPage">
+                <img src="assets/projects/portfolio/portfolio.jpg" width="250" alt="PortfolioPage">
               </a>
             </div>
             <div class="projects-item">
@@ -238,7 +243,7 @@ function curryPartial(fn, ...args) {
                   <li>Vanilla JS</li>
                   <li>Sliders and pagination</li>
                 </ul>
-                <img src="assets/img/shelter.jpg" width="250" alt="shelter">
+                <img src="assets/projects/shelter/shelter.jpg" width="250" alt="shelter">
               </a>
             </div>
             <div class="projects-item">
@@ -249,7 +254,7 @@ function curryPartial(fn, ...args) {
                   <li>Vanilla JS</li>
                   <li>Full Adaptive</li>
                 </ul>
-                <img src="assets/img/2048.png" width="250" alt="2048Game">
+                <img src="assets/projects/2048/2048.png" width="250" alt="2048Game">
               </a>
             </div>
 
@@ -261,7 +266,7 @@ function curryPartial(fn, ...args) {
                   <li>Vanilla JS</li>
                   <li>Full Adaptive</li>
                 </ul>
-                <img src="assets/img/MovieApi.jpg" width="250" alt="MovieApi">
+                <img src="assets/projects/movie-api/MovieApi.jpg" width="250" alt="MovieApi">
               </a>
             </div>
             <div class="projects-item">
@@ -271,7 +276,7 @@ function curryPartial(fn, ...args) {
                   <li>Vanilla JS</li>
                   <li>ES6 classes</li>
                 </ul>
-                <img src="assets/img/virt_keyb.jpg" width="250" alt="Virtual Keyboard">
+                <img src="assets/projects/virtual-keyboard/virt_keyb.jpg" width="250" alt="Virtual Keyboard">
               </a>
             </div>
             <div class="projects-item">
@@ -282,11 +287,11 @@ function curryPartial(fn, ...args) {
                   <li>Vanilla JS</li>
                   <li>Full Adaptive</li>
                 </ul>
-                <img src="assets/img/CustomVideoPlayer.jpg" width="250" alt="CustomVideoPlayer">
+                <img src="assets/projects/custom-video-player/CustomVideoPlayer.jpg" width="250" alt="CustomVideoPlayer">
               </a>
             </div>
           </div>
-          <a role="button" href="#" class="btn js-show-more">Show more</a>
+          <button type="button" class="btn js-show-more" aria-expanded="false" aria-controls="project-list">Show more</button>
 
 
         </section>
@@ -294,19 +299,37 @@ function curryPartial(fn, ...args) {
         <section class="section" id="exp">
           <h2 class="section-title">Experience</h2>
 
-          <ul>
-            <li>2008-2013 - <b>Banking industry</b></li>
-            <li>2013-2020 - HERMES Express ltd. - <b>maintenance corporate websites, editing layouts (CSS + HTML), editing and creating PHP components.</b></li>
-            <li>2019-2021 - OMEGA ltd. - <b>Developed an online store with 30+thousand products (PHP + JS + MySQL, CMS Joomla+Virtuemart)</b>
-            <li>2022-now - <b>Administration of multiple websites for a product company (CMS Bitrix)</b>
-            </li>
-            <li><b>other stuff:</b>
+          <div class="experience-list">
+            <article class="experience-entry">
+              <h3>Frontend Developer · WebAsyst</h3>
+              <p class="experience-date">January 2023 – June 2026</p>
               <ul>
-                <li>Developed corporate websites and landing pages (CMS Joomla)</li>
-                </li>
+                <li>Worked on the development of a CMF system, specifically the CRM module and the website builder module.</li>
+                <li>Using Vue.js, JavaScript, jQuery, PHP/Smarty, HTML, and Stylus/Sass.</li>
+                <li>Contributed to platform integration, debugging, and maintenance.</li>
+                <li>Worked in Agile/Scrum with GitHub Team and GitLab for collaborative delivery.</li>
               </ul>
-            </li>
-          </ul>
+            </article>
+            <article class="experience-entry">
+              <h3>Frontend Developer · Freelance</h3>
+              <p class="experience-date">November 2021 – December 2022</p>
+              <p>Freelance development and continued education in JavaScript, TypeScript, React, Vue.js, and PHP.</p>
+            </article>
+            <article class="experience-entry">
+              <h3>Web Developer · OMEGA ltd.</h3>
+              <p class="experience-date">May 2019 – October 2021</p>
+              <p>Developed an online store with over 30,000 products using JavaScript, PHP, HTML, and CSS, with MySQL and Joomla + Virtuemart.</p>
+            </article>
+            <article class="experience-entry">
+              <h3>Earlier &amp; additional experience</h3>
+              <ul>
+                <li><b>2022–2026:</b> Administration of multiple websites for a product company using Bitrix.</li>
+                <li><b>2013–2020 · HERMES Express ltd.:</b> Maintained corporate websites, updated HTML/CSS layouts, and developed PHP components.</li>
+                <li><b>2008–2013:</b> Banking industry.</li>
+                <li>Developed corporate websites and landing pages using Joomla.</li>
+              </ul>
+            </article>
+          </div>
         </section>
         <!--  <section class="section" id="video">
           <h2 class="section-title">Video</h2>
@@ -318,7 +341,7 @@ function curryPartial(fn, ...args) {
           <ul>
             <li><b>Moscow State University of Economics, Statistics and Computer Science</b>
               <ul>
-                <li>Mathematical Methods in Economics</li>
+                <li>Information Systems and Technologies</li>
               </ul>
             </li>
             <li><b>Online education</b>
@@ -348,7 +371,7 @@ function curryPartial(fn, ...args) {
             alt="github"></a>
       </div>
       <div class="section__footer">
-        <span class="year1">© 2022 by AVA</span>
+        <span class="year1">© 2026 by AVA</span>
       </div>
       <div class="section__footer">
         <a href="https://rs.school/js/" style="display: none;" class=""><img src="https://rs.school/images/rs_school_js.svg" width="90"
@@ -358,7 +381,7 @@ function curryPartial(fn, ...args) {
 
 
     </div>
-    <a href="#" class="button-to-top"></a>
+    <a href="#profile" class="button-to-top" aria-label="Back to top"></a>
 
 
   </footer>
