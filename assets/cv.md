@@ -113,5 +113,3 @@ Developed an online store with over 30,000 products using JavaScript, PHP, HTML,
 
 ## English 
 * Intermediate (B1)
------
- ![English test](img/1639251880628.jpg)
